@@ -67,15 +67,4 @@ Execute the experimental suite to compare protection strategies for infusion pum
 python3 src/run_experiments.py
 ```
 
----
 
-## Experimental Findings for Infusion Pump Security
-
-### Experiment 1: Ecosystem Segmentation
-**Result:** Segmenting the hospital network into distinct zones (following NIST SP 1800-8) reduced the risk to infusion pumps by **~86%** and limited the number of viable attack paths from 15 down to 4.
-
-### Experiment 2: Patching Strategy Efficiency
-**Result:** The **Risk-Reduction Optimizer** strategy significantly outperformed random and "Highest CVSS" patching. By targeting nodes that lie on multiple high-risk paths to the infusion pumps, residual risk was reduced far more effectively per patch applied.
-
-### Experiment 3: Criticality Awareness
-**Result:** By introducing Clinical Criticality multipliers, the engine successfully re-prioritized infusion pump vulnerabilities over generic enterprise vulnerabilities (like those on admin PCs) that might have higher raw CVSS scores but lower patient safety impact.
